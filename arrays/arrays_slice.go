@@ -56,4 +56,10 @@ func main() {
 	fmt.Println("Sum of 10 natural number: ", val)
 	fmt.Println("Array of 10 natural number: ", uparr)
 
+	// if we want only the value not the index then  we can follow the below step..
+	// the for loop below will ignore the index
+	for _, val := range uparr { // the range upaar will return the value and the index
+		fmt.Println(val)
+	}
+
 }
