@@ -22,7 +22,7 @@ func forLoopHelper(x int) {
 }
 
 // function with variable length argument along with named return value
-func variableArgument(params ...int) (sum int) {
+func variableArgument(defaultval int, params ...int) (sum int) {
 	x := 0
 	for x < len(params) { // it's the go's while loop
 		sum += params[x]
